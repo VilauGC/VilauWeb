@@ -10,6 +10,9 @@
 # dependencies
 /node_modules
 
+# private information like firebase keys
+/environments 
+
 # profiling files
 chrome-profiler-events*.json
 speed-measure-plugin*.json
