@@ -1,0 +1,22 @@
+{
+  "hosting": [
+    {
+      "target": "VilauWebSSR",
+      "public": "dist\\VilauWebSSR\\dist\\VilauWebSSR\\browser",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "function": "ssr"
+        }
+      ]
+    }
+  ],
+  "functions": {
+    "source": "dist/VilauWebSSR"
+  }
+}

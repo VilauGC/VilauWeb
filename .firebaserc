@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "vilauweb-9f887": {
+      "hosting": {
+        "VilauWebSSR": [
+          "vilauweb-9f887"
+        ]
+      }
+    }
+  }
+}
