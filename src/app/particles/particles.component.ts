@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-particles',
@@ -6,37 +6,16 @@ import { Component, OnInit, HostListener } from '@angular/core';
   styleUrls: ['./particles.component.css'],
 })
 export class ParticlesComponent implements OnInit {
-  screenHeight: number;
-  screenWidth: number;
-  bubbles: number;
+  bubbles = 400;
   myStyle: object = {};
   myParams: object = {};
   width = 100;
   height = 100;
 
-  constructor() {
-    this.onResize();
-  }
+  constructor() {}
 
   ngOnInit(): void {
     this.particles();
-  }
-
-  @HostListener('window:resize', ['$event'])
-  private onResize(event?) {
-    this.checkTheWidth();
-    this.screenHeight = window.innerHeight;
-    this.screenWidth = window.innerWidth;
-  }
-
-  private checkTheWidth() {
-    if (this.screenWidth < 599) {
-      this.bubbles = 100;
-    } else if (this.screenWidth > 599 && this.screenWidth < 959) {
-      this.bubbles = 100;
-    } else {
-      this.bubbles = 400;
-    }
   }
 
   private particles() {
