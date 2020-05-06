@@ -1,0 +1,10 @@
+.nav-tabs {
+    background-color: rgb(15, 14, 17);
+}
+.nav-link.active {
+    color: rgb(231, 25, 111);
+}
+a {
+    color: rgb(231, 25, 111);
+    font-family: 'Raleway', Times, serif;
+}
