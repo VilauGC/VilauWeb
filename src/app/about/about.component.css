@@ -1,0 +1,14 @@
+:host {
+  font-family: "Raleway", Times, serif;
+}
+hr {
+  width: 10%;
+  border: 1.5px solid rgb(44, 40, 40);
+  border-radius: 7px 7px;
+  background-color: rgb(44, 40, 40);
+}
+#logo {
+  margin-top: 5%;
+  color: rgb(231, 25, 111);
+  text-align: center;
+}
