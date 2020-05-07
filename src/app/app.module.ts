@@ -16,14 +16,22 @@ import { BlogComponent } from './blog/blog.component';
 import { AboutComponent } from './about/about.component';
 
 @NgModule({
-  declarations: [AppComponent, ParticlesComponent, NavbarComponent, PrivacyPolicyComponent, ShopComponent, BlogComponent, AboutComponent],
+  declarations: [
+    AppComponent,
+    ParticlesComponent,
+    NavbarComponent,
+    PrivacyPolicyComponent,
+    ShopComponent,
+    BlogComponent,
+    AboutComponent,
+  ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     ParticlesModule,
     BrowserAnimationsModule,
-    NgbModule
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
