@@ -15,6 +15,8 @@ import { ShopComponent } from './shop/shop.component';
 import { BlogComponent } from './blog/blog.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
+import { ContactComponent } from './about/contact/contact.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,7 @@ import { FooterComponent } from './footer/footer.component';
     BlogComponent,
     AboutComponent,
     FooterComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -34,6 +37,7 @@ import { FooterComponent } from './footer/footer.component';
     ParticlesModule,
     BrowserAnimationsModule,
     NgbModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

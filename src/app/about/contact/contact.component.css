@@ -1,0 +1,25 @@
+hr {
+  width: 10%;
+  border: 1.5px solid rgb(44, 40, 40);
+  border-radius: 7px 7px;
+  background-color: rgb(44, 40, 40);
+}
+#logo {
+  margin-top: 5%;
+  color: rgb(231, 25, 111);
+  text-align: center;
+}
+#socialIcons {
+  display: flex;
+  justify-content: space-around;
+}
+#faLinkedin:hover {
+  color: #0e76a8;
+}
+#faTwitter:hover {
+  color: #1da1f2;
+}
+#faGithub:hover {
+  color: #24292e;
+}
+a { color: inherit; } 
