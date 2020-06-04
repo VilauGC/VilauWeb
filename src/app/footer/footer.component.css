@@ -1,12 +1,12 @@
 :host{
-    height: 100px;
+    height: 10vh;
     background-color: rgb(15,14,17);
     display: block;
 }
 .parinte{
     position: relative;
     text-align: center;
-    height: 100px;
+    height: 100%;
 }
 #copil{
     position: absolute;

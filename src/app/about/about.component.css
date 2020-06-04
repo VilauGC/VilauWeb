@@ -12,3 +12,13 @@ hr {
   color: rgb(231, 25, 111);
   text-align: center;
 }
+#bio_paragraph {
+  padding: 0 15rem;
+  font-size: x-large;
+  text-indent: 3rem;
+  text-align: justify;
+}
+#bio_paragraph > span {
+  color: rgb(231, 25, 111);
+  font-weight: bold;
+}

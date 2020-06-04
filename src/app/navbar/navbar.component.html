@@ -1,16 +1,16 @@
 <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
   <li [ngbNavItem]="1">
-    <a ngbNavLink routerLink = "/">About</a>
+    <a ngbNavLink routerLink = "/" routerLinkActive="active">About</a>
   </li>
   <li [ngbNavItem]="2">
-    <a ngbNavLink routerLink = "/blog">Blog</a>
+    <a ngbNavLink routerLink = "/blog" routerLinkActive="active">Blog</a>
   </li>
-  <li [ngbNavItem]="3">
+  <!-- <li [ngbNavItem]="3">
     <a ngbNavLink routerLink = "/spinnersShop">Spinners Shop</a>
-  </li>
-  <li [ngbNavItem]="4">
+  </li> -->
+  <!-- <li [ngbNavItem]="4">
     <a ngbNavLink routerLink = "/privacyPolicy">Privacy Policy</a>
-  </li>
+  </li> -->
 </ul>
 
 <div [ngbNavOutlet]="nav" class="mt-2"></div>
