@@ -13,7 +13,7 @@ export class BlogComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    const countDownDate = new Date('May 31, 2020 12:00').getTime();
+    const countDownDate = new Date('June 30, 2020 12:00').getTime();
     const x = setInterval(() => {
       const now = new Date().getTime();
       const distance = countDownDate - now;

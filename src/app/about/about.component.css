@@ -13,8 +13,8 @@ hr {
   text-align: center;
 }
 #bio_paragraph {
-  padding: 0 15rem;
-  font-size: x-large;
+  padding: 0 1rem;
+  font-size: large;
   text-indent: 3rem;
   text-align: justify;
 }
@@ -22,3 +22,38 @@ hr {
   color: rgb(231, 25, 111);
   font-weight: bold;
 }
+@media (min-width: 576px) {
+  #bio_paragraph {
+    padding: 0 15rem;
+    font-size: large;
+    text-indent: 3rem;
+    text-align: justify;
+  }
+}
+
+@media (min-width: 768px) {
+  #bio_paragraph {
+    padding: 0 15rem;
+    font-size: x-large;
+    text-indent: 3rem;
+    text-align: justify;
+  }
+}
+
+/* @media (min-width: 992px) {
+  #bio_paragraph {
+    padding: 0 15rem;
+    font-size: large;
+    text-indent: 3rem;
+    text-align: justify;
+  }
+}
+
+@media (min-width: 1200px) {
+  #bio_paragraph {
+    padding: 0 15rem;
+    font-size: large;
+    text-indent: 3rem;
+    text-align: justify;
+  }
+} */

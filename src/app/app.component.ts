@@ -1,26 +1,16 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import {
-  Router,
-  ActivatedRoute,
-  ParamMap,
-  RoutesRecognized,
-  NavigationStart,
-  NavigationEnd,
-} from '@angular/router';
-import { Subscription } from 'rxjs';
+import { Router, ActivatedRoute, RoutesRecognized } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent implements OnInit, OnDestroy {
+export class AppComponent implements OnInit {
   title = 'VilauWebSSR';
   isBlog;
   browserRefresh = false;
-  subscription: Subscription;
 
-  constructor(private route: ActivatedRoute, private router: Router) {
-  }
+  constructor(private route: ActivatedRoute, private router: Router) {}
 
   ngOnInit() {
     this.isBlog = false;
@@ -35,9 +25,5 @@ export class AppComponent implements OnInit, OnDestroy {
         }
       }
     });
-  }
-
-  ngOnDestroy() {
-    this.subscription.unsubscribe();
   }
 }

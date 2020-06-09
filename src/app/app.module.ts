@@ -18,6 +18,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './about/contact/contact.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ErrorComponent } from './error/error.component';
+import { MyWorkComponent } from './about/my-work/my-work.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { ErrorComponent } from './error/error.component';
     FooterComponent,
     ContactComponent,
     ErrorComponent,
+    MyWorkComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
